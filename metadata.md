@@ -70,16 +70,15 @@ during presentations, demonstrations, or informal discussions. Include:
 - **Impact**: My feedback made it clear for my senior that he is going on the right track.
 - **Reference**: https://github.com/Allegheny-Computer-Science-600610-25-26/senior-comprehensive-project-journal-and-chapters-TaiHop/issues/9
 
-Example entries:
+- **Researcher Name / Project**: Collin Colucci / GDBuddy
+- **Feedback Provided**: Provided feedback on the introduction chapter, noting that the project clarity, background, terminology, assumptions, and ethics were all clearly presented and well-structured. Confirmed that the introduction effectively communicates the purpose and context of the project with no major revisions needed.
+- **Impact**: Reinforced that the current direction of the introduction is strong and helped validate that the foundational framing of the project is clear and complete.
+- **Reference**: https://github.com/Allegheny-Computer-Science-600610-25-26/senior-comprehensive-project-journal-and-chapters-Coltin2121/issues/13
 
-- **Student Name One / Machine Learning Bias Detection**: Suggested examining
-  fairness metrics beyond accuracy; Jane incorporated demographic parity analysis
-  into her evaluation framework
-- **Student Name Two / Distributed Caching System**: Asked about handling
-  network partitions during demo; led to important discussion about consistency
-  models
-- **Student Name Three / Graph Algorithm Visualization**: Recommended adding
-  real-time performance comparison; Alex added this feature in Week 12
+- **Researcher Name / Project**: Collin Colucci / GDBuddy
+- **Feedback Provided**: Provided a detailed review of the experiments chapter, highlighting strengths in the experimental workflow and research question alignment, while suggesting improvements such as adding quantitative results, clearer reporting of trials/sample sizes, and stronger presentation of evaluation data through tables or graphs.
+- **Impact**: Helped identify specific areas where the evaluation section could be strengthened, particularly in making the results more rigorous and clearly supported by data.
+- **Reference**: https://github.com/Allegheny-Computer-Science-600610-25-26/senior-comprehensive-project-journal-and-chapters-Coltin2121/issues/14
 
 ### Technical Discussions and Problem-Solving
 
