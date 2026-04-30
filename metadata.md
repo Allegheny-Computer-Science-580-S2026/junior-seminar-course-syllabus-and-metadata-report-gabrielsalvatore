@@ -100,29 +100,29 @@ during presentations, demonstrations, or informal discussions. Include:
 Document instances where you participated in collaborative technical
 discussions or helped fellow researchers troubleshoot issues:
 
-- **Discussion Topic / Problem**: Framing hardware-dependent benchmarks in research reports
-- **Your Contribution**: During Javier's prototype demonstration, raised the point that latency figures (such as the 12.73ms retrieval stage) should be accompanied by the hardware specification used, so that readers can contextualize results relative to their own deployment targets. Suggested reporting CPU model and RAM alongside timing results.
-- **Outcome**: Contributed to a broader group discussion about reproducibility standards for performance-critical prototypes, and helped Javier identify a gap in his experimental reporting that he addressed in the experiments chapter.
+- **Discussion Topic / Problem**: Reproducibility standards in experimental reporting
+- **Your Contribution**: Participated in a group discussion about what information needs to be included in experiments chapters for results to be reproducible. Suggested that performance figures should always be accompanied by the environment and conditions under which they were measured.
+- **Outcome**: Contributed to a shared understanding of reproducibility expectations across the research group.
 
-- **Discussion Topic / Problem**: Reporting negative or inconclusive sensitivity results honestly
-- **Your Contribution**: During a writing session, contributed to a discussion about how to frame results that don't behave as expected. Shared the perspective — developed from PIE's Experiment 3 sensitivity analysis — that reporting how a system responds across a parameter range is more informative and credible than reporting only favorable configurations, even when some results are mixed.
-- **Outcome**: Helped reinforce a shared norm of transparent result reporting in the group, and provided a concrete example of how sensitivity analysis can strengthen rather than undermine a research argument.
+- **Discussion Topic / Problem**: Framing and reporting research results honestly
+- **Your Contribution**: During a group writing session, shared the perspective that reporting a system's behavior across a range of conditions is more credible than reporting only favorable results, even when some outcomes are mixed or inconclusive.
+- **Outcome**: Helped reinforce a norm of transparent result reporting within the group.
 
 ### Research Group Meeting Participation
 
 Note particularly meaningful contributions during research group meetings:
 
 - **Meeting Date / Topic**: Week 6 / Research Idea Pitch Presentations
-- **Contribution**: During Javier's pitch on edge-constrained anomaly detection, asked a clarifying question about how the few-shot constraint (N ≤ 10 training samples) was motivated by real factory deployment limitations versus benchmark convention. The question led to a productive discussion about the gap between academic benchmark conditions and industrial deployment reality.
-- **Value to Group**: Helped the group think more critically about how prototype constraints should be grounded in real-world context rather than arbitrary choices, which was relevant to several projects in the room.
+- **Contribution**: Asked clarifying questions during peer pitches about how prototype design decisions were motivated by real-world constraints, leading to discussion about the gap between benchmark conditions and practical deployment.
+- **Value to Group**: Encouraged the group to ground their design choices in concrete context rather than treating constraints as arbitrary.
 
 - **Meeting Date / Topic**: Week 10 / Writing Workshop — Related Work Chapter
-- **Contribution**: Shared an organizational strategy for the Related Work chapter: grouping sources by the research questions they address rather than ordering them chronologically or by author. Explained how this approach made it easier to show how the literature motivates the current project rather than merely summarizing it.
-- **Value to Group**: Several researchers found this framing helpful for restructuring their Related Work drafts to connect more directly to their own research questions, reducing the "annotated bibliography" quality that early drafts often have.
+- **Contribution**: Shared a strategy for organizing the Related Work chapter around research questions rather than chronological order, making it easier to connect sources directly to the project's goals.
+- **Value to Group**: Helped peers move away from a purely descriptive literature summary toward a more argumentative structure.
 
 - **Meeting Date / Topic**: Week 13 / Research Results Presentations
-- **Contribution**: During the Q&A following a presentation, asked how the researcher established that differences in their results were statistically meaningful rather than within the range of noise, contributing to a group discussion about appropriate evaluation rigor for prototype-level research in a single semester.
-- **Value to Group**: Reinforced the importance of distinguishing between descriptive and inferential claims in results sections, a distinction that is easy to overlook when reporting prototype outputs for the first time.
+- **Contribution**: Asked questions during Q&A about how researchers distinguished meaningful results from noise, contributing to a broader discussion about evaluation rigor.
+- **Value to Group**: Reinforced the importance of distinguishing descriptive from inferential claims when reporting prototype results.
 
 ### Research Resources Shared
 
@@ -131,16 +131,14 @@ with the research group that helped advance collective knowledge:
 
 - **Resource**: Bureau of Labor Statistics CPI Methodology Documentation — [https://www.bls.gov/cpi/methodology/](https://www.bls.gov/cpi/methodology/)
 - **Shared With**: Entire research group
-- **Purpose**: Shared as an example of how a major statistical agency defines, constructs, and documents a weighted price index. Relevant to multiple projects involving data aggregation, weighting schemes, and the challenge of making a complex methodology transparent and reproducible for an external audience.
+- **Purpose**: Shared as an example of how to document a complex data methodology in a transparent and reproducible way, relevant to any project involving data aggregation or weighted measurement.
 
-- **Resource**: Strasser et al. (2023), "Subjective Inflation and Consumer Confidence" — empirical paper documenting household-level inflation heterogeneity across income groups
-- **Shared With**: Researchers working on personalization and individual-level measurement projects
-- **Purpose**: Provided an empirical grounding for why individual-level measurement diverges meaningfully from population averages — directly relevant to PIE but also useful for any project that involves aggregating individual behavior and asking whether aggregate statistics adequately represent individual experience.
+- **Resource**: Strasser et al. (2023), empirical paper on individual-level measurement variation across population groups
+- **Shared With**: Entire research group
+- **Purpose**: Shared as an example of research that motivates individual-level measurement as a distinct and valuable contribution, useful for projects dealing with personalization or the gap between aggregate and individual behavior.
 
 ## Additional Project Information
 
-PIE (Personal Inflation Estimator) evolved from a broad question about CPI personalization into a focused computational implementation of Laspeyres-type index theory applied to individual transaction data. The most significant design decision made during the semester was to keep the category-mapping layer rule-based and transparent rather than attempting to integrate a learned classifier, which allowed the system to be fully operational within the semester's time constraints while being honest about the limitations of the approach.
+PIE evolved from a broad idea about personalized inflation measurement into a focused prototype that computes individual-level inflation rates using personal transaction data and CPI sub-indices. Key design decisions were made to keep the scope achievable within a single semester while maintaining research integrity. The project's main limitation — the rule-based category mapper — is the primary target for future work in the senior project.
 
-The project's key open problem — the category-mapping bottleneck between free-text merchant names and CPI sub-index categories — is the primary target for the senior project. Replacing the rule-based mapper with a fine-tuned text classifier trained on a labeled corpus of real transaction data would substantially improve PIE's accuracy on real bank exports versus the clean mock data used in the current experiments. A secondary direction is computing distributional inflation estimates (confidence intervals) rather than point estimates, which would address the volatility sensitivity identified in the Experiment 3 sensitivity analysis and make PIE's output more actionable for users who want to understand not just their average inflation experience but how stable it is.
-
-All five chapters of the research report and all seven journal entries were completed and revised before the May 1, 2026 deadline.
+All five chapters of the research report and all seven journal entries were completed before the May 1, 2026 deadline.
